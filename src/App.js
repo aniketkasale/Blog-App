@@ -18,7 +18,7 @@ function App() {
       </Navbar>
       <Router>
         <Switch>
-          <Route path="/" exact>
+          <Route path="/Blog-App" exact>
             <Home />
           </Route>
           <Route path="/Home" exact>
