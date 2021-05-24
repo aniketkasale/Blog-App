@@ -21,7 +21,7 @@ function App() {
           <Route path="/Blog-App" exact>
             <Home />
           </Route>
-          <Route path="/Home" exact>
+          <Route path="/Blog-App" exact>
             <Home />
           </Route>
           <Route path="/landing" exact component={Details}/>
