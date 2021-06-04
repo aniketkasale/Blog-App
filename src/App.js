@@ -23,7 +23,7 @@ ReactGa.pageview(window.location.pathname + window.location.search)
       </Navbar>
       <Router>
         <Switch>
-          <Route path="/Blog-App" exact>
+          <Route path="/" exact>
             <Home />
           </Route>
           <Route path="/Home" exact>
