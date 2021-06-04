@@ -1,11 +1,16 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import "./App.css";
 import Home from "./Components/Homepage/Home";
 import Details from "./Components/Details/Details";
 import Title from "./Components/Title/Title";
 import {Navbar ,Container} from 'react-bootstrap'
+import ReactGa from 'react-ga'
 function App() {
+  useEffect(()=>{
+ReactGa.initialize("UA-198297993-1")
+ReactGa.pageview(window.location.pathname + window.location.search)
+  },[])
   return (
     <div className="App">
       <Navbar  expand="lg" variant="dark" bg="dark">
@@ -18,7 +23,7 @@ function App() {
       </Navbar>
       <Router>
         <Switch>
-          <Route path="/" exact>
+          <Route path="/Blog-App" exact>
             <Home />
           </Route>
           <Route path="/Home" exact>
