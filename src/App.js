@@ -23,8 +23,8 @@ function App() {
       </Navbar>
       <Router>
         <Switch>
-          <Route path="/" exact>
-            <Home />
+          <Route path="/" exact component={Home}>
+            
           </Route>
           <Route path="/Home" exact>
             <Home />
