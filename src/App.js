@@ -7,10 +7,10 @@ import Title from "./Components/Title/Title";
 import {Navbar ,Container} from 'react-bootstrap'
 import ReactGa from 'react-ga'
 function App() {
-  useEffect(()=>{
-ReactGa.initialize("UA-198297993-1")
-ReactGa.pageview(window.location.pathname + window.location.search)
-  },[])
+//   useEffect(()=>{
+// ReactGa.initialize("UA-198297993-1")
+// ReactGa.pageview(window.location.pathname + window.location.search)
+//   },[])
   return (
     <div className="App">
       <Navbar  expand="lg" variant="dark" bg="dark">
