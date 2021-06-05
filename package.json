@@ -1,6 +1,6 @@
 {
   "name": "blog-app",
-  "homepage": "https://aniketkasale.github.io/Blog-App",
+  
   "version": "0.1.0",
   "private": true,
   "dependencies": {
